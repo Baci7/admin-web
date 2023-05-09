@@ -27,15 +27,18 @@ module.exports = {
   publicPath: '/',
   outputDir: 'dist',
   assetsDir: 'static',
+  // 语法扫描
   lintOnSave: process.env.NODE_ENV === 'development',
   productionSourceMap: false,
   devServer: {
     port: port,
+    // 默认打开浏览器
     open: true,
     overlay: {
       warnings: false,
       errors: true
     },
+    // 默认使用模拟数据
     before: require('./mock/mock-server.js')
   },
   configureWebpack: {
