@@ -37,9 +37,9 @@ module.exports = {
     overlay: {
       warnings: false,
       errors: true
-    },
+    }
     // 默认使用模拟数据
-    before: require('./mock/mock-server.js')
+    // before: require('./mock/mock-server.js')
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
